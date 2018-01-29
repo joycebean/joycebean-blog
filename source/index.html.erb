@@ -11,11 +11,10 @@ per_page: 10
 <% end %>
 
 <% page_articles.each_with_index do |article, i| %>
-
-      <%= partial "components/index_entry", :locals => { :article => article } %>
-
+  <%= partial "components/index_entry", :locals => { :article => article } %>
   <div class="blog-entry-divider"></div>
 <% end %>
+
 
 <% if paginate %>
   <% if next_page %>
