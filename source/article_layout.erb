@@ -1,0 +1,42 @@
+<%# This is the single article layout.
+  the article is stored under a variable called current_page
+
+  current_page.title
+  current_page.body
+  current_page.body.summary(100) where 100 is the amount of characters
+  current_page.tags
+
+  when you add extra properties to the article markdown
+
+  this is the example header.
+
+  ---
+  hero: /images/blog/html5-banner.gif
+  blurb: awesome tutorial thanks
+  ---
+
+  they can be accessed as
+
+  current_page.data.hero
+  current_page.data.blurb
+
+  current_page.data.index_image
+
+  to render a value into the html you use the following syntax
+
+  <%= current_page.data.index_image \%\>
+
+  so using this within a html tag
+
+  <img src="<%= article.data.hero \%\>">
+%>
+<% wrap_layout :layout do %>
+  <%= partial "components/article_title", :locals => { :article => current_page } %>
+  <% if current_page.data.hero %>
+    <img src="<%= current_page.data.hero %>" class="img-fluid fadeIn animated" alt="<%= current_page.data.title %>">
+  <% end %>
+  <article>
+    <%= yield %>
+  </article>
+  <%= partial "components/tags", :locals => { :article => current_page } %>
+<% end %>

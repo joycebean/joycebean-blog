@@ -1,0 +1,7 @@
+<div class="tags-styling">
+  <% article.tags.each do |tag, articles| %>
+  <span class="tag">
+    <%= link_to "#{tag}", "#{tag_path(tag)}" %>
+  </span>
+  <% end %>
+</div>

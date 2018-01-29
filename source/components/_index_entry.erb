@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-md-6 col-sm-12">
+    <img src="<%= article.data.thumbnail %>" class="img-fluid fadeIn animated" alt="<%= article.title %>">
+  </div>
+  <div class="col-md-6 col-sm-12" style="min-height:250px;">
+    <h3 style="padding-top:0px;"><%= link_to article.title, relinkArticle("/#{article.path}") %></h3>
+    <%= partial "components/date_display", :locals => { :article => article } %>
+    <p>
+    <%= article.data.blurb %>
+    <span><%= link_to "Read More", relinkArticle("/#{article.path}") %></span>
+    </p>
+    <%= partial "components/tags", :locals => { :article => article } %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+
+  </div>
+</div>

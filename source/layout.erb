@@ -1,0 +1,171 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="An illustrator and Graphic Designer based in Singapore.">
+  	<meta name="keywords" content="Illustrator, Graphic Designer, Web Designer, Illustration, Graphic Design, Web Design, Singapore, Illustrator Singapore, Graphic Designer Singapore, UI Designer, HTML, CSS, Frontend Developer, Design Portfolio">
+  	<meta name="author" content="Joyce Lee">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/text/css" href="css/normalize.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/animate.css" />
+    <link rel="stylesheet" href="/css/blog-css.css" type="text/css">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/5681404475.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Signika:300,400,600,700" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../images/favicon.ico">
+
+    <title>Joycebean.net Blog / Graphic Designer & Illustrator in Singapore</title>
+    <title>Blog Title<%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+  </head>
+  </head>
+  <body>
+    <div class="container fadeIn animated">
+      <div class="row">
+        <div class="joycebean-logo">
+          <p><a href="/index.php"><img class="img-fluid" src="/images/blog/joycebean-logo-400@2x.png" alt="Joycebean Illustration & Graphic Design"></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="container fadeIn animated">
+      <div class="row">
+        <div class="nav">
+          <ul>
+            <li><a href="/index.php">Home</a></li>
+            <li><a href="/about.php">About</a></li>
+            <li><a href="/illustration.php">Illustration</a></li>
+            <li><a href="/webdesign.php">Web Design</a></li>
+            <li><a href="/logos.php">Logos</a></li>
+            <li><a href="/others.php">Others</a></li>
+            <!--<li><a href="/free-resources.php">Free Stuff</a></li>
+            <li><a href="http://somenicecards.com" target="_blank">Shop</a></li>
+            -->
+            <li><a href="/blog" target="_blank">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 129.1 108.2" style="enable-background:new 0 0 129.1 108.2;" xml:space="preserve">
+          <style type="text/css">
+          	.st0{fill:#2C23CE;}
+          </style>
+          <g>
+          	<path class="st0" d="M127.4,40.4c1.1-1.4,1.7-3.3,1.7-5.1v-7.5c0-2.4-1-4.7-2.8-6.2C120.5,16.5,98.7,0,64.6,0
+          		C30.5,0,8.6,16.5,2.8,21.5C1,23.1,0,25.3,0,27.8v7.5c0,1.9,0.6,3.7,1.7,5.1c1.4,1.8,3.5,2.9,5.7,2.9h0.2c0,0.3,0,0.5,0,0.8v4.6
+          		c0,0.3,0,0.6,0.1,0.8C3.4,49.8,0,53.3,0,57.7v3c0,4.5,3.7,8.2,8.2,8.2h1.4v3.4H6.7c-1.9,0-3.4,1.5-3.4,3.4V99
+          		c0,5.1,4.2,9.3,9.3,9.3h103.8c5.1,0,9.3-4.2,9.3-9.3V75.7c0-1.9-1.5-3.4-3.4-3.4h-2.6v-3.4h1.3c4.5,0,8.2-3.7,8.2-8.2v-3
+          		c0-4.3-3.4-7.9-7.7-8.2c0-0.3,0.1-0.6,0.1-0.8v-4.6c0-0.3,0-0.5,0-0.8h0.2C123.9,43.3,126,42.2,127.4,40.4z M6.8,36.5
+          		c-0.2-0.3-0.4-0.8-0.4-1.2v-7.5c0-0.6,0.2-1.1,0.6-1.4c5.5-4.7,25.7-20,57.6-20c31.9,0,52.2,15.3,57.6,20c0.3,0.3,0.6,0.8,0.6,1.4
+          		v7.5c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.3-0.5,0.4-0.7,0.4h-7.3H14.8H7.5C7.2,36.9,7,36.8,6.8,36.5z M6.4,60.7v-3c0-1,0.8-1.8,1.8-1.8
+          		h6.6H48h0.9l7.3,6.6h-48C7.2,62.5,6.4,61.7,6.4,60.7z M118.7,99c0,1.3-1.1,2.4-2.4,2.4H12.5c-1.3,0-2.4-1.1-2.4-2.4V79.1h108.6V99z
+          		 M122.7,57.7v3c0,1-0.8,1.8-1.8,1.8H78l4.1-6.6h32.2h6.6C121.9,55.9,122.7,56.7,122.7,57.7z M115.1,44.1v4.6c0,0.4-0.4,0.8-0.8,0.8
+          		H81.8h-1.5c-1.1,0-2.1,0.6-2.7,1.5L69,65h-0.5L52.3,50.3c-0.6-0.5-1.3-0.8-2.1-0.8H48H14.8c-0.4,0-0.8-0.4-0.8-0.8v-4.6
+          		c0-0.4,0.4-0.8,0.8-0.8h99.5C114.8,43.3,115.1,43.6,115.1,44.1z"/>
+          	<path class="st0" d="M21.9,32.3c0.7,0,1.4-0.3,2-0.8l7.3-6.7c1.2-1.1,1.3-3,0.2-4.2c-1.1-1.2-3-1.3-4.2-0.2l-7.3,6.7
+          		c-1.2,1.1-1.3,3-0.2,4.2C20.3,32,21.1,32.3,21.9,32.3z"/>
+          	<path class="st0" d="M47.6,24.6c0.6,0.7,1.4,1.1,2.3,1.1c0.7,0,1.4-0.2,1.9-0.7c1.3-1.1,1.4-3,0.3-4.2l-3.7-4.3
+          		c-1.1-1.3-3-1.4-4.2-0.3s-1.4,3-0.3,4.2L47.6,24.6z"/>
+          	<path class="st0" d="M63.1,32c0.4,0.2,0.9,0.4,1.4,0.4c1.1,0,2.1-0.6,2.7-1.6l4.7-8.9c0.8-1.5,0.2-3.3-1.2-4.1
+          		c-1.5-0.8-3.3-0.2-4.1,1.2l-4.7,8.9C61.1,29.4,61.7,31.2,63.1,32z"/>
+          	<path class="st0" d="M89,27.2c0.6,0.5,1.3,0.7,2,0.7c0.8,0,1.7-0.4,2.3-1c1.1-1.3,0.9-3.2-0.3-4.2l-7.7-6.6
+          		c-1.3-1.1-3.2-0.9-4.2,0.3c-1.1,1.3-0.9,3.2,0.3,4.2L89,27.2z"/>
+          	<path class="st0" d="M102.8,32.1c0.4,0.1,0.7,0.2,1.1,0.2c1.2,0,2.3-0.7,2.8-1.9l2.7-6.7c0.6-1.5-0.1-3.3-1.7-3.9
+          		c-1.5-0.6-3.3,0.1-3.9,1.7l-2.7,6.7C100.5,29.8,101.3,31.5,102.8,32.1z"/>
+          </g>
+          </svg>
+        </span>
+        <span style="margin-left:10px;font-size:14px; font-weight:700; color:#2c23ce; margin-right:0;">MENU</span>
+      </button>
+
+      <div style="display: block;
+        background-color: #ddd;
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        margin-left: 121px;"></div>
+
+      <div style="width:100%;"><a style="float:right" href="/index.php"><img style="width:150px" class="img-fluid" src="/images/joycebean-logo-150px.png" alt="Joycebean Illustration & Graphic Design"></a></div>
+    </nav>
+
+    <div class="collapse navbar-collapse nav-responsive" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.php">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about.php">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/illustration.php">Illustration</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/webdesign.php">Web Design</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/logos.php">Logos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/others.php">Others</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blog">Blog</a>
+        </li>
+      </ul>
+    </div>
+
+  <body>
+
+
+  <div class="container mar-top-20">
+    <div class="row justify-content-md-center">
+      <div class="col-sm-9 mar-top-20 mar-bot-80 blog-content">
+        <div id="main" role="main">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid footer-container">
+    <div class="row">
+      <div class="col-sm-8 offset-sm-2 text-align-center">
+        <h2>Get in touch</h2>
+        <p>Thanks for stopping by! Hope you enjoyed my work as much as I enjoyed creating them. If you have any questions, comments or would just like to get in contact, do drop me an email at <a href="mailto:joycelee.illustration [at] gmail.com">joycelee.illustration@gmail.com</a></p>
+        <p class="footer-social-media">
+          <a href="https://instagram.com/joycebeanillustration" target="_blank">
+            <i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/joycebean" target="_blank">
+            <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+          <a href="https://github.com/joycebean" target="_blank">
+            <i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+          <a href="https://dribbble.com/joycebean" target="_blank">
+            <i class="fa fa-dribbble fa-lg" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/joycebeanillustration/" target="_blank">
+            <i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="/js/nav.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,143 @@
+a:hover {
+	text-decoration: none;
+}
+
+.blog-date {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+.blog-header {
+	font-size:22px;
+	margin-top:60px;
+}
+
+.blog-header a {
+	color:#000;
+	}
+
+.blog-sidebar a:link,
+.blog-sidebar a:active,
+.blog-sidebar a:focus,
+.blog-sidebar a:visited {
+	color:#3229e2;
+	border-bottom: 3px #eae9fc solid;
+	text-decoration: none;
+}
+
+.blog-sidebar a:hover {
+	color:#9375f2;
+	text-decoration:none;
+	border-bottom: 3px #f3f2ff solid;
+}
+
+.blog-sidebar {
+	margin:60px 0 0 0;
+	padding:0;
+}
+
+.blog-sidebar ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  line-height: 2.1;
+  letter-spacing: 0.07em;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.blog-sidebar h4 {
+	padding: 0;
+	margin: 30px auto 5px auto;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight:700;
+	letter-spacing: 0.065em;
+	color: #333;
+}
+
+.blog-content {
+  line-height: 1.6;
+	font-size: 17px;
+	letter-spacing: 0.002em;
+	color: #444;
+}
+
+.blog-content p {
+	margin-bottom: 30px;
+}
+
+.blog-content h2 a {
+	font-size: 29px;
+  color: #000;
+  line-height: 40.4px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.blog-content h2 a:hover {
+	color:#444;
+	text-decoration: none;
+	}
+
+.blog-content h3 {
+	font-size: 22px;
+	color: #333;
+	-webkit-font-smoothing: auto;
+	padding-top: 15px;
+}
+
+.blog-content ul, ol {
+	margin-top: -25px;
+	margin-bottom: 30px;
+}
+
+.blog-content img {
+	border-radius: 3px;
+}
+
+code {
+	color: #e22c09;
+  font-size: 85%;
+}
+
+blockquote {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #f2f5ff;
+	color: #3b404f;
+}
+
+strong {
+	font-weight: 600;
+	color: #333;
+}
+
+.tags-styling {
+		text-transform: uppercase;
+		font-size: 11px;
+		font-weight: 600;
+		margin-right:2px;
+		margin-bottom: 20px;
+}
+
+.tag a {
+	color: #95a5b1;
+	background-color: #e6edf3;
+	border-radius: 3px;
+	padding: 5px 8px;
+	margin-right: 5px;
+}
+
+.blog-entry-divider {
+	display: block;
+	width: 100%;
+	background-color: #ddd;
+	height: 1px;
+	margin-bottom: 40px;
+}
